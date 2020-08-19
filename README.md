@@ -48,20 +48,5 @@ For Linux
 $ npm run package-linux
 ```
 
-### User Login
-
-``` Owner 
-      Username: steve@gmail.com  
-	  Password: 1234
-
-	  
-``` Shopkeeper 
-        Username: erick@gmail.com 
-		Password: 123456
-
-
-``` Storekeeper 
-        Username: roman@gmail.com 
-		Password: 12345
 
 
