@@ -1,5 +1,5 @@
 # inventoryapp
-# MallMS Desktop Application
+
 
  Desktop application with Electron
 
