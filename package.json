@@ -1,0 +1,32 @@
+{
+  "name": "inventory",
+  "version": "1.0.0",
+  "description": "Electron inventory desktop app",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron .",
+    "dev": "nodemon  -r esm  index.js",
+    "package-mac": "electron-packager . --overwrite --platform=darwin --arch=x64 --icon=assets/icons/mac/icon.icns --prune=true --out=release-builds",
+    "package-win": "electron-packager . --overwrite --asar=true --platform=win32 --arch=ia32 --icon=assets/icons/win/icon.ico --prune=true --out=release-builds --version-string.CompanyName=CE --version-string.FileDescription=CE --version-string.ProductName=\"Inventory\"",
+    "package-linux": "electron-packager . --overwrite --platform=linux --arch=x64 --icon=assets/icons/png/icon.png --prune=true --out=release-builds"
+  },
+  "author": "Father Christmass",
+  "license": "ISC",
+  "dependencies": {
+    "bcrypt": "^5.0.0",
+    "body-parser": "^1.19.0",
+    "electron": "^1.7.6",
+    "esm": "^3.2.25",
+    "express": "^4.17.1",
+    "mysql2": "^2.1.0",
+    "print-js": "^1.0.63",
+    "printd": "^1.4.2",
+    "sequelize": "^5.21.13"
+  },
+  "devDependencies": {
+    "electron-packager": "^15.0.0",
+    "electron-rebuild": "^1.11.0",
+    "nodemon": "^2.0.4",
+    "sequelize-cli": "^5.5.1"
+  }
+}
